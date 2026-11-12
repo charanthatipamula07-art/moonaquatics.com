@@ -66,6 +66,8 @@ table td,table th{padding:12px;vertical-align:top}
 
 .admin-tab.active{background:#06b6d4;color:#00131b;border-color:#06b6d4;font-weight:700}
 
+html{scroll-behavior:smooth}
+
 </style>
 
 </head>
@@ -81,6 +83,8 @@ table td,table th{padding:12px;vertical-align:top}
 <nav class="flex items-center flex-wrap gap-2 text-sm">
 
 <a href="#products" class="btn2">Shop</a>
+
+<a href="#contact" class="btn2">Contact Us</a>
 
 <button class="btn2" onclick="openCart()">Cart (<span id="cartCount">0</span>)</button>
 
@@ -151,6 +155,38 @@ table td,table th{padding:12px;vertical-align:top}
 <p id="storeMessage" class="muted mb-5">Loading products...</p>
 
 <div id="productGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+
+</section>
+
+<!-- SEPARATE CONTACT US SECTION -->
+
+<section id="contact" class="max-w-7xl mx-auto px-5 py-16 scroll-mt-24">
+
+<div class="glass rounded-3xl p-8 md:p-12 text-center">
+
+<p class="text-cyan-300 font-semibold tracking-widest text-sm">WE ARE HERE TO HELP</p>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mt-3">Contact Us</h2>
+
+<p class="muted mt-4 leading-7">Have questions about aquarium fish, products or orders? Contact MOONAQUATICS. We are happy to help you!</p>
+
+<div class="mt-8">
+
+<p class="text-sm muted">Call or WhatsApp us</p>
+
+<p class="text-2xl md:text-3xl font-bold text-cyan-300 mt-2">+91 95427 92437</p>
+
+</div>
+
+<div class="flex flex-wrap justify-center gap-3 mt-6">
+
+<a class="btn" href="tel:+919542792437">Call Us</a>
+
+<a class="btn2" href="https://wa.me/919542792437" target="_blank" rel="noopener">WhatsApp Us</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -394,8 +430,6 @@ table td,table th{padding:12px;vertical-align:top}
 
 </div>
 
-<!-- ADMIN NAVIGATION TABS -->
-
 <div class="flex flex-wrap gap-3 mb-6">
 
 <button id="adminTabOrders" class="btn2 admin-tab active" onclick="showAdminSection('orders')">Orders</button>
@@ -405,8 +439,6 @@ table td,table th{padding:12px;vertical-align:top}
 <button id="adminTabProducts" class="btn2 admin-tab" onclick="showAdminSection('products')">Products</button>
 
 </div>
-
-<!-- ORDERS SECTION -->
 
 <div id="adminOrdersSection" class="glass rounded-2xl p-6 mb-8">
 
@@ -428,8 +460,6 @@ table td,table th{padding:12px;vertical-align:top}
 
 </div>
 
-<!-- SHIPMENTS SECTION -->
-
 <div id="adminShipmentsSection" class="hidden glass rounded-2xl p-6 mb-8">
 
 <div class="flex flex-wrap justify-between items-center gap-3 mb-5">
@@ -445,8 +475,6 @@ table td,table th{padding:12px;vertical-align:top}
 <div id="adminShipmentList" class="space-y-5"></div>
 
 </div>
-
-<!-- PRODUCTS SECTION -->
 
 <div id="adminProductsSection" class="hidden">
 
@@ -494,7 +522,7 @@ table td,table th{padding:12px;vertical-align:top}
 
 </main>
 
-<footer id="storeFooter" class="border-t border-cyan-950 mt-16">
+<footer id="storeFooter" class="border-t border-cyan-950 mt-8">
 
 <div class="max-w-7xl mx-auto px-5 py-8 text-center">
 
@@ -502,17 +530,7 @@ table td,table th{padding:12px;vertical-align:top}
 
 <p class="muted text-sm mt-2">Your underwater world starts here.</p>
 
-<h3 class="font-bold text-cyan-300 mt-6">Contact Us</h3>
-
-<p class="muted mt-2">+91 95427 92437</p>
-
-<div class="flex justify-center gap-3 mt-4">
-
-<a class="btn2" href="tel:+919542792437">Call Us</a>
-
-<a class="btn2" href="https://wa.me/919542792437" target="_blank" rel="noopener">WhatsApp</a>
-
-</div>
+<p class="muted text-xs mt-5">©️ 2026 MOONAQUATICS. All rights reserved.</p>
 
 </div>
 
